@@ -1,4 +1,4 @@
-🎉 Age Calculator Web Application 
+Age Calculator Web Application 
 
 A simple yet elegant web application to calculate a user's age based on their birthdate. The app features a clean UI, validation errors, toast notifications, and a "Clear" button for resetting the form. 
 🌟 Features 

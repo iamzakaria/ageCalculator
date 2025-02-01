@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen relative">
+  <!-- Toast Container -->
+  <div id="toastContainer" class="fixed top-4 right-4 z-50 space-y-2"></div>
+
+  <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Age Calculator</h1>
+    <form id="ageForm" class="space-y-4" aria-labelledby="form-title">
+      <div>
+        <label for="birthdate" class="block text-sm font-medium text-gray-700">Birthdate</label>
+        <input type="date" id="birthdate" name="birthdate" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" aria-describedby="birthdate-error">
+      </div>
+      <div class="flex space-x-4">
+        <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-300">Calculate Age</button>
+        <button type="button" id="clearButton" class="w-full bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400 transition duration-300">Clear</button>
+      </div>
+      <p id="birthdate-error" class="hidden text-red-500 text-sm">Please select a valid birthdate.</p>
+    </form>
+    <div id="result" class="mt-6 text-center space-y-2 hidden">
+      <p class="text-xl font-semibold text-gray-800">Your Age:</p>
+      <p id="ageOutput" class="text-2xl text-indigo-600"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
